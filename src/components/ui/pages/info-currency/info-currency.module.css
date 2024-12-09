@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 100vh;
+  background-color: #2d3142;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.label {
+  font-weight: bold;
+  color: #f47c2b;
+}
+
+.value {
+  font-size: 1.1rem;
+}
+
+.error {
+  max-width: 400px;
+  margin: 20px auto;
+  color: #f47c2b;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #f47c2b;
+  border-radius: 8px;
+}
+
+.goBackButton {
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  background-color: #f47c2b;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.goBackButton:hover {
+  background-color: #d65c1d;
+}

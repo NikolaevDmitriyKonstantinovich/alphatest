@@ -1,0 +1,123 @@
+.currencyRates {
+    background-color: #4f5d75;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .currencyRates h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .currencyRates ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .currencyItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #2d3142;
+    border: 1px solid #f47c2b;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .currencyItem:hover {
+    background-color: #f47c2b;
+    color: white;
+  }
+  
+  .currencyItem strong {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .currencyItem div {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .error {
+    color: #f47c2b;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #f47c2b;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .loading {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px auto;
+  }
+
+  .addCard {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    width: 50px;
+    height: 50px;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .addCard:hover {
+    background-color: #f47c2b;
+    border-color: #f47c2b;
+  }
+  
+  .addCardIcon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .addCard:hover .addCardIcon {
+    color: #1c1c21;
+  }
+  .currencyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #4f5d75;
+  }
+  
+  .currencyList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .currencyList::-webkit-scrollbar-track {
+    background: #4f5d75;
+  }
+  
+  .currencyList::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+  }
+  
+  .currencyList::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+  }

@@ -1,8 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import menuItemsReducer from './slices/menuItemSlice';
-import faqsReducer from './slices/faqSlice';
-import userReducer from './slices/userSlice';
-import cardReducer from './slices/cardSlice';
+import currencyReducer from './slices/currencySlice';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 import {
   TypedUseSelectorHook,
@@ -10,11 +9,15 @@ import {
   useSelector as selectorHook
 } from 'react-redux';
 
+const persistConfig = {
+  key: 'root',
+  storage
+};
+
+const persistedCurrencyReducer = persistReducer(persistConfig, currencyReducer);
+
 export const rootReducer = combineReducers({
-  faqsReducer: faqsReducer,
-  menuItemsReducer: menuItemsReducer,
-  userReducer: userReducer,
-  cardReducer: cardReducer
+  currency: persistedCurrencyReducer
 });
 
 export const store = configureStore({
@@ -26,4 +29,5 @@ export const useDispatch: () => AppDispatch = () => dispatchHook();
 export const useSelector: TypedUseSelectorHook<RootState> = selectorHook;
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
+
 export default store;

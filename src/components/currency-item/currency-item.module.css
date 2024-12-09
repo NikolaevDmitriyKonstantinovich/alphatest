@@ -1,0 +1,81 @@
+.currencyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background-color 0.3s ease;
+  color: #333;
+  cursor: pointer;
+}
+
+.currencyItem:hover {
+  background-color: #f0f0f0;
+}
+
+.currencyInfo {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.likeButton,
+.removeButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.likeButton.liked {
+  color: red;
+}
+
+.removeButton:hover {
+  color: #e63946;
+}
+.likeButton,
+.removeButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.likeButton.liked svg {
+  fill: red;
+}
+
+.iconLike,
+.iconTrash {
+  width: 24px;
+  height: 24px;
+}
+
+.iconLike:hover,
+.iconTrash:hover {
+  stroke: #e63946;
+}
+

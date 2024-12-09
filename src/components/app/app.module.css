@@ -3,6 +3,8 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .mainContent {
@@ -25,7 +27,6 @@
   border-radius: 8px;
 }
 
-/* Скроллбар */
 ::-webkit-scrollbar {
   width: 8px;
 }
