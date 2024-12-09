@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styles from './currency-item.module.css';
-import LikeIcon from '../../../public/images/LikeIcon';
-import TrashIcon from '../../../public/images/TrashIcon';
+import LikeIcon from '../../utils/LikeIcon';
+import TrashIcon from '../../utils/TrashIcon';
 
 interface CurrencyItemProps {
   id: string;

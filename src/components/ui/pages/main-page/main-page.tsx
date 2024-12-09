@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import styles from './main-page.module.css';
-import { AppNavigate } from '@components';
+import { AppNavigate } from 'src/components/app-navigate';
 
 export const MainPageUI: FC = () => (
   <main className={styles.containerMain}>

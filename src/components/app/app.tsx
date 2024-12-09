@@ -1,10 +1,12 @@
 import { FC, useState } from 'react';
 import styles from './app.module.css';
-import { AppFooter, AppHeader, AppNavigate } from '@components';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { NotFound404 } from '@pages';
 import InfoCurrency from '../ui/pages/info-currency/info-currency';
 import CreateCurrency from '../../pages/create-currancy/create-currancy';
+import { AppHeader } from '../app-header';
+import { AppNavigate } from '../app-navigate';
+import { AppFooter } from '../app-footer';
+import { NotFound404 } from '../../pages/not-fount-404/not-found-404';
 
 const App = () => {
   const location = useLocation();

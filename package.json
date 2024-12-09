@@ -2,6 +2,7 @@
   "name": "react-canonical",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nikolaevdmitriykonstantinovich.github.io/alphatest",
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@remix-run/router": "^1.21.0",
@@ -15,11 +16,13 @@
     "@zlden/react-developer-burger-ui-components": "^1.15.0",
     "axios": "^1.7.9",
     "clsx": "^2.0.0",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
     "react-redux": "^9.1.0",
     "react-router-dom": "^6.28.0",
+    "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^3.1.0",
@@ -80,11 +83,25 @@
     "build": "webpack --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier ./src --write"
+    "format": "prettier ./src --write",
+    "buildreact": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
